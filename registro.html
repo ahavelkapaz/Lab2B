@@ -49,28 +49,30 @@
 			if(!checkName())
 			{
 				alert("Debes introducir tu nombre y uno o dos apellidos.");
-				return;
+				return false;
 			}
 			//alert("nombre");
 			if(!checkMail())
 			{
 				alert("El correo debe tener el formato de la UPV/EHU");
-				return;
+				return false;
 			}
 			//alert("mail");
 			if(!checkPass())
 			{
 				alert("Formato mínimo => 1 mayúscula, 1 minúscula, 1 dígito y 1 Carácter especial. La longitud debe ser entre 8 y 16 caracteres.");
-				return;
+				return false;
 			}
 			//alert("pass");
 			if(!checkNumber())
 			{
 				alert("Introduce mínimo 9 dígitos (máximo 25). También puedes incluir prefijos del formato +NN, un número con prefijo será de esta forma: +34943121212 .");
-				return;
+				return false;
 			}
-			alert("Todo correcto.");
+			
+		return true;
 		}
+		
 		</script>
 	</head>
 
